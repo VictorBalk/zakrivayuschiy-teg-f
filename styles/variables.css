@@ -1,1 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font-family: "Inter", sans-serif;
+  --accent-font-family: "PressStart2P", sans-serif;
+  --main-font-family-regular: 485;
+  --main-font-family-bold: 785;
+  --main-color: #00cc14;
+  --main-background-color: #000;
+  --main-color-animation-heart: #ff0000;
+  --gradient-color-bright: #007f0c;
+  --gradient-color-dim: #004306;
+}
