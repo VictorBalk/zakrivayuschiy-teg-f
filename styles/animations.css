@@ -57,13 +57,13 @@
 }
 
 .card__icon-button:hover .main-body {
-  transition: 0.3s 0.05s;
   fill: var(--main-color);
+  transition: 0.3s 0.05s;
 }
 
 .card__icon-button:active .main-body {
-  transition: 0.3s 0.05s;
   fill: var(--main-color-animation-heart);
+  transition: 0.3s 0.05s;
 }
 
 .like-icon.is-liked .main-body {
@@ -76,25 +76,25 @@
 }
 
 .like-icon.is-liked .contour {
-  transition: 0.3s 0.06s;
   fill: var(--main-color-animation-heart);
+  transition: 0.3s 0.06s;
 }
 
 .heart {
-  transform-origin: center;
   transform: scale(1);
+  transform-origin: center;
 }
 
 .like-icon.is-liked .heart {
-  animation: scale-heart 0.3s 0.1s ease-in alternate;
   fill: var(--main-color-animation-heart);
+  animation: scale-heart 0.3s 0.1s ease-in alternate;
 }
 
 .sparks {
-  fill: var(--main-color-animation-heart);
   opacity: 0;
+  fill: var(--main-color-animation-heart);
 }
 
-.like-icon.is-liked .sparks  {
-    animation: opacity-sparks 0.3s 0.3s ease-in alternate;
+.like-icon.is-liked .sparks {
+  animation: opacity-sparks 0.3s 0.3s ease-in alternate;
 }

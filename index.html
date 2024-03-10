@@ -503,7 +503,7 @@
         <div class="section_icon">
           <span class="section_icon-watermark"> &lt;experience&gt; </span>
           <img
-            class="section_icon-img filter_Opacity"
+            class="section_icon-img filter_Invert_Contrast"
             src="./images/night_city.jpg"
             alt="Изображение ночного города"
           />
@@ -579,14 +579,14 @@
     </footer>
 
     <dialog class="save_dialog" id="dialog-id">
-      <div class="save_dialog_title">
+      <form class="save_dialog_form">
         <svg class="save_dialog_icon" viewBox="0 0 20 20">
           <use href="#floppy" width="40" height="40" />
         </svg>
-        <span class="save_dialog_title-text"
+        <span class="save_dialog_form-text"
           >Вставьте дискету, чтобы продолжить
         </span>
-      </div>
+      </form>
       <button
         class="save_dialog_button fill_button shadow_button"
         onclick="window['dialog-id'].close();"

@@ -7,18 +7,18 @@
   background-color: var(--main-background-color);
 }
 
-.save_dialog_title-text {
-  font-size: 14px;
-  line-height: 150%;
-  text-transform: uppercase;
-}
-
-.save_dialog_title {
+.save_dialog_form {
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
   gap: 20px;
   padding: 30px;
+}
+
+.save_dialog_form-text {
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
 }
 
 .save_dialog_icon {
