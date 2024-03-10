@@ -1,0 +1,57 @@
+.save_dialog {
+  width: 23%;
+  min-width: 341px;
+  padding: 0px;
+  color: var(--main-color);
+  font-family: var(--accent-font-family);
+  background-color: var(--main-background-color);
+}
+
+.save_dialog_title-text {
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.save_dialog_title {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.save_dialog_icon {
+  width: 39px;
+  height: 39px;
+  fill: var(--main-color);
+}
+
+.save_dialog_button {
+  position: relative;
+  width: 100%;
+  max-width: 293px;
+  margin-block-end: 30px;
+  border: 2px solid;
+  padding-block: 13px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.save_dialog_button_text {
+  color: var(--button-text-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+}
+
+.save_dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.save_dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(7px);
+}

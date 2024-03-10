@@ -1,0 +1,33 @@
+.filter_Blur {
+    filter: blur(9px);
+  }
+  
+  .filter_Brightness {
+    filter: brightness(144%);
+  }
+  
+  .filter_Contrast {
+      filter: contrast(140%);
+  }
+  
+  .filter_Opacity {
+  filter: opacity(99%);
+  }
+  
+  .filter_Hue_rotate {
+      filter: hue-rotate(-180deg);
+  }
+  
+  .filter_Invert {
+      filter: invert(86%);
+  }
+  
+  .filter_Saturate {
+  
+      filter: saturate(190%);
+  }
+  
+  .filter_Sepia {
+      filter: sepia(95%);
+  }
+  

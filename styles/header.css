@@ -1,0 +1,93 @@
+.header {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: end;
+  height: calc(40vh - 16px);
+  min-height: 327px;
+  margin-block: 100px;
+  border: 2px solid;
+  font-family: var(--accent-font-family);
+  text-transform: uppercase;
+  background-color: var(--main-background-color);
+}
+
+.header__title {
+  font-size: clamp(2.722rem, 2.409rem + 1.502vw, 3.611rem);
+  text-align: center;
+}
+
+.header__subtitle {
+  justify-self: end;
+  padding-block-start: 20px;
+  font-size: clamp(0.778rem, 0.602rem + 0.845vw, 1.278rem);
+  text-align: center;
+}
+.header__theme-menu {
+  padding: 25px;
+  font-size: 14px;
+}
+
+.theme-menu__button {
+  border: 0px solid;
+  padding: 0px;
+  outline: none;
+  text-transform: uppercase;
+  background-color: inherit;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.theme-menu__button:disabled:before {
+  content: "▶";
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  animation: cursor-menu 0.5s infinite ease-in-out alternate;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu {
+  display: flex;
+  justify-content: center;
+  padding-inline: 20px;
+}
+
+.theme-menu__item {
+  position: relative;
+  margin-inline-start: 18px;
+}
+
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left bottom;
+}
+
+.theme-menu__button:focus-visible:after {
+  opacity: 0.6;
+  transform: scaleX(1);
+}
+
+.theme-menu__button:hover,
+.theme-menu__button:focus {
+  opacity: 0.6;
+}

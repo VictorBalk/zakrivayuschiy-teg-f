@@ -1,0 +1,106 @@
+.main {
+  display: inline-flex;
+  flex-direction: column;
+  gap:50px;
+  font-family: var(--main-font-family);
+  font-variation-settings: "wght" var(--main-font-family-regular);
+}
+
+.section {
+  border: 2px solid;
+  background-color: var(--main-background-color);
+}
+
+.section_title {
+  border-bottom: 2px solid;
+  padding: 5px 24px 5px 10px;
+  font-size: 18px;
+  background-color: var(--main-background-color);
+  font-variation-settings: "wght" var(--main-font-family-bold);
+}
+
+.section_icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: bottom;
+}
+
+.section_icon {
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.section_icon-watermark {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  text-shadow: -1px 0 var(--shadow-watermark-color),
+    0 1px var(--shadow-watermark-color), 1px 0 var(--shadow-watermark-color),
+    0 -1px var(--shadow-watermark-color);
+  mix-blend-mode: hard-light;
+  z-index: 2;
+}
+
+@supports ((-webkit-text-stroke: 1px var(--shadow-watermark-color))) {
+  .section_icon-watermark {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--shadow-watermark-color);
+  }
+}
+.section_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  border-top: 2px solid;
+  padding: 25px;
+}
+
+.section_buttons {
+  display: flex;
+  justify-content: end;
+  gap: 1px;
+  padding-bottom: 25px;
+  padding-inline-end: 25px;
+  font-size: 14px;
+}
+
+.button__text {
+  position: relative;
+  /* text-transform: uppercase; */
+  display: block;
+  color: var(--button-text-color);
+  font-family: var(--accent-font-family);
+  mix-blend-mode: difference;
+}
+
+.card__like-button {
+  position: relative;
+  /* padding-inline: 30px; */
+  min-width: 130px;
+  border: solid 2px;
+  padding-inline: 5px;
+  padding-block: 0;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.card__icon-button {
+  height: 38px;
+  border: solid 2px transparent;
+  padding-inline: 4px;
+  outline: none;
+  background-color: inherit;
+  transition: border 0.3s;
+  cursor: pointer;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid;
+}
+
