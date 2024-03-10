@@ -5,6 +5,7 @@
     <meta name="color-scheme" content="dark light" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -14,7 +15,7 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header container_width">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
 
       <span class="header__subtitle"> закрывающий тег </span>
@@ -45,27 +46,39 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <h2>Фритрек и нулевой спринт: Подготовка к работе</h2>
-        <div class="img-cont">
-          <img src="./images/demo2.png" alt="Машинка" />
+    <main class="main container_width">
+      <section class="section">
+        <h2 class="section_title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="section_icon">
+          <span class="section_icon-watermark"> &lt;/HTML&gt; </span>
+          <img
+            class="section_icon-img"
+            src="./images/demo2.png"
+            alt="Машинка"
+          />
+          <ul class="section_texts">
+            <li class="section_texts-item">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+            </li>
+            <li>
+              <p>Место для ваших воспоминаний о начале обучения.</p>
+            </li>
+          </ul>
         </div>
-        <article>
-          <p class="articale_text">
-            Это было самое начало пути. На этом этапе важно было проникнуться
-            основами и настроиться на учёбу. И, возможно, подумать, как новые
-            знания могут повлиять на ваше будущее.
-          </p>
-          <p class="articale_text">
-            Место для ваших воспоминаний о начале обучения.
-          </p>
-        </article>
+
         <div class="section_buttons">
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              width="39" height="36" viewBox="0 0 39 36"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
             >
               <g class="heart">
