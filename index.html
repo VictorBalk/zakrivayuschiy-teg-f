@@ -65,9 +65,7 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              width="39"
-              height="36"
-              viewBox="0 0 39 36"
+              width="39" height="36" viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
             >
               <g class="heart">
@@ -111,14 +109,22 @@
         <span class="fotter_button-text">Сохранить на память</span>
       </button>
     </footer>
+
     <dialog class="save_dialog" id="dialog-id">
-      <h3 class="save_dialog_title">
-        <svg class="fotter_icon-floppy">
-          <use href="#floppy" />
+      <div class="save_dialog_title">
+        <svg class="save_dialog_icon" viewBox="0 0 20 20">
+          <use href="#floppy" width="40" height="40" />
         </svg>
-        <span class="save_dialog_title-text"> Вставьте дискету, чтобы продолжить </span>
-        <button>ok</button>
-      </h3>
+        <span class="save_dialog_title-text"
+          >Вставьте дискету, чтобы продолжить
+        </span>
+      </div>
+      <button
+        class="save_dialog_button fill_button shadow_button"
+        onclick="window['dialog-id'].close();"
+      >
+        <span class="save_dialog_button_text">ok</span>
+      </button>
     </dialog>
     <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
       <symbol id="floppy">
