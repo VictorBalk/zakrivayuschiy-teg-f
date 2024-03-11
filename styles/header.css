@@ -2,8 +2,9 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: end;
-  height: calc(40vh - 16px);
-  min-height: 327px;
+  /* height: calc(40vh - 16px);
+  min-height: 327px; */
+
   margin-block: 100px;
   border: 2px solid;
   font-family: var(--accent-font-family);
@@ -12,6 +13,7 @@
 }
 
 .header__title {
+  padding-block-start: clamp(6.667rem, 6.354rem + 1.502vw, 7.556rem);
   font-size: clamp(2.722rem, 2.409rem + 1.502vw, 3.611rem);
   text-align: center;
 }
@@ -71,11 +73,11 @@
 .theme-menu__button::after {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: -5px;
   left: 0px;
   display: block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: currentColor;
   transition: transform 0.3s ease;
   transform: scaleX(0);

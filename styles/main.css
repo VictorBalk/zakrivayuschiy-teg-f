@@ -1,7 +1,7 @@
 .main {
   display: inline-flex;
   flex-direction: column;
-  gap:50px;
+  gap: 50px;
   font-family: var(--main-font-family);
   font-variation-settings: "wght" var(--main-font-family-regular);
 }
@@ -36,6 +36,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
+  z-index: 2;
   opacity: 0.5;
   font-family: var(--accent-font-family);
   font-size: 14px;
@@ -43,7 +44,6 @@
     0 1px var(--shadow-watermark-color), 1px 0 var(--shadow-watermark-color),
     0 -1px var(--shadow-watermark-color);
   mix-blend-mode: hard-light;
-  z-index: 2;
 }
 
 @supports ((-webkit-text-stroke: 1px var(--shadow-watermark-color))) {
@@ -52,6 +52,7 @@
     -webkit-text-stroke: 1px var(--shadow-watermark-color);
   }
 }
+
 .section_texts {
   display: flex;
   flex-direction: column;
@@ -104,3 +105,33 @@
   border: 2px solid;
 }
 
+.save{
+  display: flex;
+  justify-content: center;
+}
+
+.save_button {
+  position: relative;
+  margin-block-end: 100px;
+  border: solid 2px;
+  padding: 13px 19px;
+  outline: none;
+  background-color: var(--main-background-color);
+  cursor: pointer;
+}
+
+.save_button-icon_floppy {
+  width: 21px;
+  height: 21px;
+  fill: var(--button-text-color);
+  mix-blend-mode: difference;
+}
+.save_button-text {
+  position: relative;
+  color: var(--button-text-color);
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  mix-blend-mode: difference;
+  padding-inline-start: 6px ;
+
+}

@@ -7,6 +7,7 @@
     <title>Закрывающий тег</title>
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <link rel="stylesheet" href="./styles/save_dialog.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
@@ -22,9 +24,9 @@
   </head>
   <body class="page">
     <header class="header container_width">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <a class="header__title">&lt;/HTML&gt;</a>
 
-      <span class="header__subtitle"> закрывающий тег </span>
+      <h1 class="header__subtitle">закрывающий тег</h1>
 
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -60,7 +62,7 @@
         <div class="section_icon">
           <span class="section_icon-watermark"> &lt;/HTML&gt; </span>
           <img
-            class="section_icon-img filter_Blur"
+            class="section_icon-img filter_blur"
             src="./images/orange_column.jpg"
             alt="Машинка"
           />
@@ -82,7 +84,7 @@
         </div>
 
         <div class="section_buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -113,7 +115,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button fill_button shadow_button">
+          <button
+            type="button"
+            class="card__like-button fill_button shadow_button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -123,7 +128,7 @@
         <div class="section_icon">
           <span class="section_icon-watermark"> &lt;/HTML&gt; </span>
           <img
-            class="section_icon-img filter_Sepia"
+            class="section_icon-img filter_sepia"
             src="./images/balloons.jpg"
             alt="Изображение воздушных шаров над городом зимой"
           />
@@ -145,7 +150,7 @@
         </div>
 
         <div class="section_buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -176,7 +181,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button fill_button shadow_button">
+          <button
+            type="button"
+            class="card__like-button fill_button shadow_button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -186,7 +194,7 @@
         <div class="section_icon">
           <span class="section_icon-watermark"> &lt;css&gt; </span>
           <img
-            class="section_icon-img filter_Saturate"
+            class="section_icon-img filter_saturate"
             src="./images/black_wooden.jpg"
             alt="Изображение черного китайского святильника на поле ржи"
           />
@@ -208,7 +216,7 @@
         </div>
 
         <div class="section_buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -239,7 +247,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button fill_button shadow_button">
+          <button
+            type="button"
+            class="card__like-button fill_button shadow_button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -249,7 +260,7 @@
         <div class="section_icon">
           <span class="section_icon-watermark"> &lt;desigions&gt; </span>
           <img
-            class="section_icon-img filter_Contrast"
+            class="section_icon-img filter_contrast"
             src="./images/home.jpg"
             alt="Изображение дома на зеленной плантации"
           />
@@ -273,7 +284,7 @@
         </div>
 
         <div class="section_buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -304,7 +315,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button fill_button shadow_button">
+          <button
+            type="button"
+            class="card__like-button fill_button shadow_button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -314,7 +328,7 @@
         <div class="section_icon">
           <span class="section_icon-watermark"> care </span>
           <img
-            class="section_icon-img filter_Brightness"
+            class="section_icon-img filter_brightness"
             src="./images/light_bulbs.jpg"
             alt="Изображение гирляднды лампочек ночью"
           />
@@ -335,7 +349,7 @@
         </div>
 
         <div class="section_buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -366,7 +380,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button fill_button shadow_button">
+          <button
+            type="button"
+            class="card__like-button fill_button shadow_button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -376,7 +393,7 @@
         <div class="section_icon">
           <span class="section_icon-watermark"> &lt;support&gt; </span>
           <img
-            class="section_icon-img filter_Invert"
+            class="section_icon-img filter_invert"
             src="./images/moon_view_from_clouds.jpg"
             alt="Изобраение луны в облоках"
           />
@@ -398,7 +415,7 @@
         </div>
 
         <div class="section_buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -429,7 +446,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button fill_button shadow_button">
+          <button
+            type="button"
+            class="card__like-button fill_button shadow_button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -441,7 +461,7 @@
             &lt;lifes-style: none;&gt;
           </span>
           <img
-            class="section_icon-img filter_Hue_rotate"
+            class="section_icon-img filter_hue_rotate"
             src="./images/Moom.jpg"
             alt="Изобраение кровавой луны"
           />
@@ -462,7 +482,7 @@
         </div>
 
         <div class="section_buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -493,7 +513,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button fill_button shadow_button">
+          <button
+            type="button"
+            class="card__like-button fill_button shadow_button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -503,7 +526,7 @@
         <div class="section_icon">
           <span class="section_icon-watermark"> &lt;experience&gt; </span>
           <img
-            class="section_icon-img filter_Invert_Contrast"
+            class="section_icon-img filter_invert_contrast"
             src="./images/night_city.jpg"
             alt="Изображение ночного города"
           />
@@ -528,7 +551,7 @@
         </div>
 
         <div class="section_buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               width="39"
@@ -559,25 +582,28 @@
               />
             </svg>
           </button>
-          <button class="card__like-button fill_button shadow_button">
+          <button
+            type="button"
+            class="card__like-button fill_button shadow_button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
       </section>
+      <section class="save">
+        <button
+          type="button"
+          onclick="window['dialog-id'].showModal();"
+          aria-controls="dialog-id"
+          class="save_button fill_button shadow_button"
+        >
+          <svg class="save_button-icon_floppy">
+            <use href="#floppy" />
+          </svg>
+          <span class="save_button-text">Сохранить на&nbsp;память</span>
+        </button>
+      </section>
     </main>
-    <footer class="footer">
-      <button
-        onclick="window['dialog-id'].showModal();"
-        aria-controls="dialog-id"
-        class="fotter_button fill_button shadow_button"
-      >
-        <svg class="fotter_icon-floppy">
-          <use href="#floppy" />
-        </svg>
-        <span class="fotter_button-text">Сохранить на память</span>
-      </button>
-    </footer>
-
     <dialog class="save_dialog" id="dialog-id">
       <form method="dialog" class="save_dialog_form">
         <svg class="save_dialog_icon" viewBox="0 0 20 20">
@@ -586,13 +612,13 @@
         <span class="save_dialog_form-text"
           >Вставьте дискету, чтобы продолжить
         </span>
+        <button
+          type="submit"
+          class="save_dialog_button fill_button shadow_button"
+        >
+          <span class="save_dialog_button_text">ok</span>
+        </button>
       </form>
-      <button
-        class="save_dialog_button fill_button shadow_button"
-        onclick="window['dialog-id'].close();"
-      >
-        <span class="save_dialog_button_text">ok</span>
-      </button>
     </dialog>
     <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
       <symbol id="floppy">
